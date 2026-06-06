@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hauling Ass Website Checklist | DS Digital Designs</title>
+
+  <style>
+    :root {
+      --bg: #f6f9ff;
+      --white: #ffffff;
+      --text: #111827;
+      --muted: #64748b;
+      --soft: #eef5ff;
+      --soft-2: #f8fbff;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --cyan: #38bdf8;
+      --line: #dbe7f5;
+      --green: #16a34a;
+      --orange: #f97316;
+      --shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+      --radius: 22px;
+      --max: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 32%),
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.5rem 0 4rem;
+    }
+
+    .brand-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding: 0.85rem 1rem;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff;
+      font-weight: 900;
+      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
+    }
+
+    .brand-pill {
+      color: var(--blue);
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(239, 246, 255, 0.95));
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 6px);
+      padding: clamp(1.6rem, 5vw, 3.2rem);
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(56, 189, 248, 0.18));
+      right: -80px;
+      top: -80px;
+    }
+
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      background: var(--soft);
+      color: var(--blue);
+      border: 1px solid var(--line);
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(2.1rem, 7vw, 4.8rem);
+      line-height: 0.92;
+      letter-spacing: -0.075em;
+      margin-bottom: 1rem;
+      max-width: 760px;
+    }
+
+    h1 span {
+      display: block;
+      color: var(--blue);
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 1;
+      color: var(--muted);
+      max-width: 720px;
+      font-size: 1.05rem;
+    }
+
+    .note {
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff;
+      border-radius: 20px;
+      padding: 1rem 1.1rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      box-shadow: 0 16px 40px rgba(37, 99, 235, 0.18);
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 12px 35px rgba(15, 23, 42, 0.045);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-num {
+      min-width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--soft);
+      color: var(--blue);
+      border: 1px solid var(--line);
+      font-weight: 900;
+    }
+
+    .section-title {
+      flex: 1;
+    }
+
+    .section h2 {
+      font-size: 1.35rem;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      margin-bottom: 0.25rem;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background: var(--soft-2);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 0.9rem;
+      cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+
+    label:hover {
+      transform: translateY(-1px);
+      border-color: rgba(37, 99, 235, 0.35);
+      background: #ffffff;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 0.25rem;
+      width: 20px;
+      height: 20px;
+      accent-color: var(--blue);
+      flex: 0 0 auto;
+    }
+
+    .item-text strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+      color: var(--text);
+    }
+
+    .item-text span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    textarea,
+    input[type="text"] {
+      width: 100%;
+      background: #ffffff;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 0.9rem;
+      font-size: 1rem;
+      margin-top: 0.8rem;
+      resize: vertical;
+      outline: none;
+      box-shadow: inset 0 1px 0 rgba(15, 23, 42, 0.02);
+    }
+
+    textarea:focus,
+    input[type="text"]:focus {
+      border-color: rgba(37, 99, 235, 0.55);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    }
+
+    textarea::placeholder,
+    input::placeholder {
+      color: #94a3b8;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .quick-box {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 12px 35px rgba(15, 23, 42, 0.045);
+    }
+
+    .quick-box h2 {
+      font-size: 1.4rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.5rem;
+    }
+
+    .quick-box p {
+      color: var(--muted);
+      margin-bottom: 0.85rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      background: var(--soft);
+      color: var(--blue-dark);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.45rem 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .footer {
+      color: var(--muted);
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .footer strong {
+      color: var(--blue);
+    }
+
+    .print-btn {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 0.9rem 1.2rem;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 16px 40px rgba(37, 99, 235, 0.28);
+    }
+
+    .print-btn:hover {
+      filter: brightness(1.04);
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 0.75rem;
+      }
+
+      .brand-bar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .section-header {
+        gap: 0.75rem;
+      }
+
+      .print-btn {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      .brand-bar,
+      .hero,
+      .section,
+      .quick-box,
+      label,
+      .note {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      .print-btn {
+        display: none;
+      }
+
+      textarea,
+      input[type="text"] {
+        min-height: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="brand-bar">
+      <div class="brand">
+        <div class="brand-mark">DS</div>
+        <div>DS Digital Designs</div>
+      </div>
+
+      <div class="brand-pill">Client Intake Checklist</div>
+    </div>
+
+    <section class="hero">
+      <div class="eyebrow">Website Prep</div>
+      <h1>
+        Hauling Ass
+        <span>Info Checklist</span>
+      </h1>
+      <p>
+        This checklist gathers everything needed to build a clean website for Hauling Ass:
+        hauling services, contact info, photos, and optional Shopify shirt sales.
+      </p>
+    </section>
+
+    <div class="note">
+      Main goal: make the business easy to understand, easy to contact, and ready to sell shirts through Shopify if needed.
+    </div>
+
+    <section class="quick-box">
+      <h2>Recommended Starting Point</h2>
+      <p>
+        Start simple: a one-page hauling business website with a merch section that links to Shopify.
+        The website shows the business. Shopify handles the checkout.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">One-page site</span>
+        <span class="pill">Call / text buttons</span>
+        <span class="pill">Service list</span>
+        <span class="pill">Photos</span>
+        <span class="pill">Shopify links</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">1</div>
+        <div class="section-title">
+          <h2>Basic Business Info</h2>
+          <p class="section-desc">This is the core info for the top of the website and contact section.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Exact business name</strong>
+            <span>Example: Hauling Ass, Hauling Assets, or the official legal name.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Phone number</strong>
+            <span>The number customers should call or text for quotes.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Best contact method</strong>
+            <span>Call, text, Facebook Messenger, email, or quote form.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Service area</strong>
+            <span>What cities/counties he serves. Example: Greeneville, Johnson City, Tri-Cities, etc.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Business hours</strong>
+            <span>Days/times customers can call or schedule work.</span>
+          </div>
+        </label>
+      </div>
+
+      <textarea rows="5" placeholder="Notes for basic business info..."></textarea>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">2</div>
+        <div class="section-title">
+          <h2>Hauling Services</h2>
+          <p class="section-desc">These are the services that should be listed on the website.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Gravel hauling</strong>
+            <span>Does he deliver, move, spread, or just transport gravel?</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Concrete hauling</strong>
+            <span>Concrete chunks, removal, job-site cleanup, disposal, etc.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Dirt / topsoil / fill material</strong>
+            <span>What materials does he move?</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Debris cleanup</strong>
+            <span>Yard debris, construction debris, junk, trash, or dump runs.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>What he does not haul</strong>
+            <span>Important for avoiding wrong customers. Example: hazardous waste, chemicals, etc.</span>
+          </div>
+        </label>
+      </div>
+
+      <textarea rows="6" placeholder="List exact services here..."></textarea>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">3</div>
+        <div class="section-title">
+          <h2>Photos Needed</h2>
+          <p class="section-desc">Real photos make the site look more legit and trustworthy.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Truck / trailer photos</strong>
+            <span>Clear photos of the equipment used for hauling.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Before / after job photos</strong>
+            <span>Great for showing the value of the service.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Material photos</strong>
+            <span>Gravel, concrete, dirt, debris, loaded trailer, job site, etc.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Logo or brand image</strong>
+            <span>If he has one. If not, a simple text logo can be used for now.</span>
+          </div>
+        </label>
+      </div>
+
+      <textarea rows="5" placeholder="Photo notes / filenames / what he still needs to send..."></textarea>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">4</div>
+        <div class="section-title">
+          <h2>Shirt / Merch Info</h2>
+          <p class="section-desc">Only needed if the website will show shirts and link to Shopify.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Shirt photos</strong>
+            <span>Front/back photos or mockups for each shirt design.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Prices</strong>
+            <span>Price for each shirt/product.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Sizes available</strong>
+            <span>Small, Medium, Large, XL, 2XL, etc.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Colors available</strong>
+            <span>Black, gray, white, orange, etc.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Shopify product links</strong>
+            <span>Needed if the website buttons will send people to Shopify.</span>
+          </div>
+        </label>
+      </div>
+
+      <textarea rows="6" placeholder="Merch notes / shirt names / prices / sizes / colors..."></textarea>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">5</div>
+        <div class="section-title">
+          <h2>Shopify Setup</h2>
+          <p class="section-desc">This decides whether the site only links to Shopify or if more store setup is needed.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Does he already have Shopify?</strong>
+            <span>Yes/no. If yes, get the store link.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Are the products already uploaded?</strong>
+            <span>If not, product upload/setup is extra work.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Shipping method</strong>
+            <span>Shipping, local pickup, delivery, or both.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Payment setup</strong>
+            <span>Shopify needs to be able to accept payments before launch.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Tax / policy settings</strong>
+            <span>Refund policy, shipping policy, taxes, etc. Shopify handles this side.</span>
+          </div>
+        </label>
+      </div>
+
+      <textarea rows="5" placeholder="Shopify notes..."></textarea>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">6</div>
+        <div class="section-title">
+          <h2>Website Decisions</h2>
+          <p class="section-desc">These decide how big the project actually is.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Does he want a domain?</strong>
+            <span>Example: haulingass.com or something similar.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Does he want hosting setup?</strong>
+            <span>Needed if the website is going online under its own domain.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>One-page site or multi-page site?</strong>
+            <span>Starter version should probably be one page.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Contact form or just call/text buttons?</strong>
+            <span>Call/text buttons are simpler. Forms are extra setup.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Google Business Profile help?</strong>
+            <span>Optional add-on if he wants help showing up locally.</span>
+          </div>
+        </label>
+      </div>
+
+      <textarea rows="6" placeholder="Website decisions / domain ideas / hosting notes..."></textarea>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">7</div>
+        <div class="section-title">
+          <h2>Pricing / Scope Notes</h2>
+          <p class="section-desc">Use this to keep the project from turning into hidden extra work.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <input type="text" placeholder="Base website price..." />
+        <input type="text" placeholder="Shopify setup price..." />
+        <input type="text" placeholder="Product photo price..." />
+        <input type="text" placeholder="Domain/hosting setup price..." />
+      </div>
+
+      <textarea rows="6" placeholder="Scope notes: what is included, what is extra, what he is responsible for..."></textarea>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-num">8</div>
+        <div class="section-title">
+          <h2>Quick Questions to Ask TJ</h2>
+          <p class="section-desc">Use these to figure out if this is a simple build or a bigger project.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>What is the main goal?</strong>
+            <span>More hauling jobs, shirt sales, or both?</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Do you already have Shopify set up?</strong>
+            <span>This tells us whether we are linking to Shopify or building the store side too.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Do you already have product photos?</strong>
+            <span>If not, photography is separate.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>Do you want a real domain?</strong>
+            <span>This affects setup and cost.</span>
+          </div>
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          <div class="item-text">
+            <strong>What is your budget for getting this online?</strong>
+            <span>This helps decide basic, standard, or full build.</span>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <p class="footer">
+      Prepared by <strong>DS Digital Designs</strong> for Hauling Ass website planning.
+    </p>
+
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+  </main>
+</body>
+</html>

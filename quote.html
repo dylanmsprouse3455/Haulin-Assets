@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Get a Quote | Haulin Ass ETS ASSets</title>
+
+  <meta
+    name="description"
+    content="Request a hauling quote from Haulin Ass ETS ASSets for dump truck hauling, shale, rock, sand, mulch, top soil, fill dirt, driveway material, and material delivery."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo-wrap" aria-label="Haulin Ass ETS ASSets home">
+          <img src="logo.png" alt="Haulin Ass ETS ASSets logo" />
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+          <span class="menu-icon"></span>
+        </button>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#blue-shale">Blue Shale</a>
+        <a href="index.html#availability">Availability</a>
+        <a href="index.html#service-area">Service Area</a>
+        <a href="index.html#rates">Rates</a>
+        <a href="quote.html">Quote</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="wizard-hero">
+        <div class="section-title">
+          <div class="small">Quick Quote</div>
+          <h2>What Do You Need?</h2>
+          <p>
+            Answer a few quick questions and we’ll help figure out the right truck,
+            material, and hauling setup for the job.
+          </p>
+        </div>
+      </section>
+
+      <section class="wizard-section">
+        <form id="quoteWizard" class="wizard-form">
+
+          <div class="wizard-progress">
+            <div class="wizard-progress-bar" id="progressBar"></div>
+          </div>
+
+          <!-- STEP 1 -->
+          <div class="wizard-step active" data-step="1">
+            <h3>What are you needing?</h3>
+
+            <div class="choice-grid">
+              <button type="button" class="choice-btn" data-name="What They Need" data-value="Material Delivery">
+                Material Delivery
+              </button>
+
+              <button type="button" class="choice-btn" data-name="What They Need" data-value="Driveway / Road Material">
+                Driveway / Road Material
+              </button>
+
+              <button type="button" class="choice-btn" data-name="What They Need" data-value="Jobsite Material">
+                Jobsite Material
+              </button>
+
+              <button type="button" class="choice-btn" data-name="What They Need" data-value="Haul-Off / Removal">
+                Haul-Off / Removal
+              </button>
+
+              <button type="button" class="choice-btn" data-name="What They Need" data-value="Dump Truck Hauling">
+                Dump Truck Hauling
+              </button>
+
+              <button type="button" class="choice-btn" data-name="What They Need" data-value="Not Sure">
+                Not Sure
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="wizard-step" data-step="2" data-multiple="true">
+            <h3>What is this job for?</h3>
+
+            <div class="choice-grid">
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Driveway">
+                Driveway
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Farm Road">
+                Farm Road
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Jobsite Entrance">
+                Jobsite Entrance
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Muddy Area">
+                Muddy Area
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Parking Area">
+                Parking Area
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Drainage Area">
+                Drainage Area
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Yard / Landscaping">
+                Yard / Landscaping
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Construction Project">
+                Construction Project
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Cleanup / Removal">
+                Cleanup / Removal
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Job Purpose" data-value="Other / Not Sure">
+                Other / Not Sure
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="wizard-step" data-step="3" data-multiple="true">
+            <h3>What material are you looking for?</h3>
+
+            <div class="choice-grid">
+              <button type="button" class="choice-btn" data-name="Material" data-value="Crushed Blue Shale">
+                Crushed Blue Shale
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Brown Shale">
+                Brown Shale
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Rock">
+                Rock
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Pea Gravel">
+                Pea Gravel
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Sand">
+                Sand
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="River Rock">
+                River Rock
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Fill Dirt">
+                Fill Dirt
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Top Soil">
+                Top Soil
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Mulch">
+                Mulch
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Concrete Block">
+                Concrete Block
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Demo Material">
+                Demo Material
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Material" data-value="Not Sure / Other">
+                Not Sure / Other
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="wizard-step" data-step="4" data-multiple="true">
+            <h3>What do you need done?</h3>
+
+            <div class="choice-grid">
+              <button type="button" class="choice-btn" data-name="Service Needed" data-value="Deliver Only">
+                Deliver Only
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Service Needed" data-value="Spread It">
+                Spread It
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Service Needed" data-value="Haul It Away">
+                Haul It Away
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Service Needed" data-value="Load / Move Material">
+                Load / Move Material
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Service Needed" data-value="Not Sure Yet">
+                Not Sure Yet
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="wizard-step" data-step="5">
+            <h3>How many loads?</h3>
+
+            <div class="choice-grid">
+              <button type="button" class="choice-btn" data-name="Estimated Loads" data-value="1 Load">
+                1 Load
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Estimated Loads" data-value="2 Loads">
+                2 Loads
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Estimated Loads" data-value="3+ Loads">
+                3+ Loads
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Estimated Loads" data-value="Not Sure">
+                Not Sure
+              </button>
+            </div>
+
+            <p class="form-note-dark">
+              Not sure? No problem. We can help figure it out.
+            </p>
+          </div>
+
+          <!-- STEP 6 -->
+          <div class="wizard-step" data-step="6">
+            <h3>Where is the job?</h3>
+
+            <label>
+              Delivery Address / Job Location
+              <input
+                type="text"
+                name="Delivery Address / Job Location"
+                placeholder="Address, road name, or general area"
+                required
+              />
+            </label>
+
+            <label>
+              County
+              <select name="County">
+                <option value="">Choose county</option>
+                <option>Washington County</option>
+                <option>Greene County</option>
+                <option>Sullivan County</option>
+                <option>Carter County</option>
+                <option>Unicoi County</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </label>
+
+            <label>
+              Pickup Location, If Different
+              <input
+                type="text"
+                name="Pickup Location"
+                placeholder="Leave blank if you are not sure"
+              />
+            </label>
+          </div>
+
+          <!-- STEP 7 -->
+          <div class="wizard-step" data-step="7" data-multiple="true">
+            <h3>Can a dump truck access the area?</h3>
+
+            <div class="choice-grid">
+              <button type="button" class="choice-btn" data-name="Truck Access" data-value="Yes, Easy Access">
+                Yes, Easy Access
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Truck Access" data-value="Tight Driveway">
+                Tight Driveway
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Truck Access" data-value="Muddy / Soft Ground">
+                Muddy / Soft Ground
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Truck Access" data-value="Steep Driveway">
+                Steep Driveway
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Truck Access" data-value="Low Wires / Trees">
+                Low Wires / Trees
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Truck Access" data-value="Not Sure">
+                Not Sure
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 8 -->
+          <div class="wizard-step" data-step="8">
+            <h3>When do you need it?</h3>
+
+            <div class="choice-grid">
+              <button type="button" class="choice-btn" data-name="Timing" data-value="As Soon As Possible">
+                As Soon As Possible
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Timing" data-value="This Week">
+                This Week
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Timing" data-value="This Weekend">
+                This Weekend
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Timing" data-value="Specific Date">
+                Specific Date
+              </button>
+
+              <button type="button" class="choice-btn" data-name="Timing" data-value="Just Getting a Price">
+                Just Getting a Price
+              </button>
+            </div>
+
+            <label class="date-field">
+              Specific Date, If You Have One
+              <input type="text" name="Specific Date" placeholder="Example: Saturday morning, June 15, etc." />
+            </label>
+          </div>
+
+          <!-- STEP 9 -->
+          <div class="wizard-step" data-step="9">
+            <h3>Do you have photos?</h3>
+
+            <div class="choice-grid">
+              <button
+                type="button"
+                class="choice-btn photo-choice"
+                data-name="Photos"
+                data-value="Yes, I can send photos"
+                data-show-photos="true"
+              >
+                Yes, I Can Send Photos
+              </button>
+
+              <button
+                type="button"
+                class="choice-btn photo-choice"
+                data-name="Photos"
+                data-value="No photos"
+                data-show-photos="false"
+              >
+                No Photos
+              </button>
+            </div>
+
+            <div class="photo-upload-box" id="photoUploadBox">
+              <h4>Add Photos</h4>
+
+              <p>
+                Take or upload photos of the driveway, jobsite, material, or truck access area.
+              </p>
+
+              <label class="upload-card">
+                Take Photo
+                <input
+                  type="file"
+                  name="Take Photo"
+                  accept="image/*"
+                  capture="environment"
+                />
+              </label>
+
+              <label class="upload-card">
+                Upload Photos
+                <input
+                  type="file"
+                  name="Uploaded Photos"
+                  accept="image/*"
+                  multiple
+                />
+              </label>
+
+              <p class="form-note-dark">
+                If photos do not attach automatically, we may ask you to text them after submitting.
+              </p>
+            </div>
+          </div>
+
+          <!-- STEP 10 -->
+          <div class="wizard-step" data-step="10">
+            <h3>Your contact info</h3>
+
+            <label>
+              Name
+              <input type="text" name="Name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Phone Number
+              <input type="tel" name="Phone Number" placeholder="Best phone number" required />
+            </label>
+
+            <label>
+              Email Optional
+              <input type="email" name="Email" placeholder="Email address, optional" />
+            </label>
+
+            <label>
+              Can We Text You About This Quote?
+              <select name="Text Permission">
+                <option value="">Choose one</option>
+                <option>Yes, text is fine</option>
+                <option>Call only</option>
+                <option>Email only</option>
+              </select>
+            </label>
+
+            <label>
+              Best Way To Contact You
+              <select name="Best Contact Method">
+                <option value="">Choose one</option>
+                <option>Call</option>
+                <option>Text</option>
+                <option>Email</option>
+              </select>
+            </label>
+
+            <label>
+              Extra Details
+              <textarea
+                name="Extra Details"
+                placeholder="Tell us anything else we should know about the job, driveway, access, number of loads, timing, or material."
+              ></textarea>
+            </label>
+          </div>
+
+          <!-- STEP 11 -->
+          <div class="wizard-step" data-step="11">
+            <h3>Review Request</h3>
+
+            <div class="review-box" id="reviewBox">
+              Your quote details will show here.
+            </div>
+
+            <p class="form-note-dark">
+              This is an estimate request only. Final pricing must be confirmed before delivery.
+            </p>
+
+            <button class="btn btn-red" type="submit">Send Quote Request</button>
+          </div>
+
+          <div class="wizard-controls">
+            <button type="button" class="btn btn-blue" id="backBtn">Back</button>
+            <button type="button" class="btn btn-red" id="nextBtn">Next</button>
+          </div>
+
+        </form>
+      </section>
+    </main>
+
+  </div>
+
+  <div class="bottom-bar">
+    <a href="tel:4237910981">
+      <span>☎</span>
+      Call Now
+    </a>
+
+    <a href="quote.html">
+      <span>☑</span>
+      Get Quote
+    </a>
+
+    <a href="index.html#service-area">
+      <span>📍</span>
+      Service Area
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="quote.js"></script>
+</body>
+</html>
