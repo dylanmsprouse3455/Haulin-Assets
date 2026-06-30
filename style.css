@@ -326,6 +326,155 @@ section {
   border-radius: 100px;
 }
 
+/* MATERIAL PHOTO CARDS */
+
+.material-grid {
+  align-items: stretch;
+}
+
+.material-card {
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden;
+  padding: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.material-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.material-img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  display: block;
+}
+
+.material-card h3 {
+  padding: 16px 16px 4px;
+}
+
+.material-card h3::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.material-card p {
+  padding: 0 16px 18px;
+  color: var(--gray);
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.material-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  z-index: 9999;
+}
+
+.material-modal.active {
+  display: flex;
+}
+
+.material-modal-content {
+  width: 100%;
+  max-width: 620px;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.material-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 999px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.material-modal-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.material-modal-body {
+  padding: 24px;
+}
+
+.material-modal-body h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
+.material-modal-body > p {
+  color: var(--gray);
+  margin-bottom: 18px;
+}
+
+.material-info-block {
+  background: var(--light);
+  border-left: 5px solid var(--red);
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.material-info-block strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--black);
+}
+
+.material-info-block p {
+  color: var(--gray);
+}
+
+@media (max-width: 600px) {
+  .material-img {
+    height: 130px;
+  }
+
+  .material-modal {
+    padding: 14px;
+  }
+
+  .material-modal-img {
+    height: 190px;
+  }
+
+  .material-modal-body {
+    padding: 20px;
+  }
+
+  .material-modal-body h3 {
+    font-size: 1.6rem;
+  }
+}
+
 /* BLUE SHALE */
 
 .blue-shale {
@@ -1043,4 +1192,13 @@ section {
   .bottom-bar {
     display: none;
   }
+}
+
+.material-modal-content {
+  max-height: 86vh;
+  overflow-y: auto;
+}
+
+.material-modal-body {
+  padding-bottom: 34px;
 }
