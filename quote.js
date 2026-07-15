@@ -1,3 +1,20 @@
+// Load the quote-page compatibility stylesheet after the main site styles.
+// This keeps the repair isolated to quote.html and avoids changing homepage layouts.
+const quoteStylesheet = document.createElement("link");
+quoteStylesheet.rel = "stylesheet";
+quoteStylesheet.href = "quote-fix.css?v=20260715-1";
+document.head.appendChild(quoteStylesheet);
+
+document.title = "Get a Quote | Haulin Assets Mafia";
+
+const quoteDescription = document.querySelector('meta[name="description"]');
+if (quoteDescription) {
+  quoteDescription.setAttribute(
+    "content",
+    "Request a hauling quote from Haulin Assets Mafia for dump truck hauling, shale, rock, sand, mulch, top soil, fill dirt, driveway material, and material delivery."
+  );
+}
+
 const quoteWizard = document.getElementById("quoteWizard");
 const steps = document.querySelectorAll(".wizard-step");
 const nextBtn = document.getElementById("nextBtn");
